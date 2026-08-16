@@ -1,0 +1,7 @@
+.env
+
+# Local VPS sync helpers (contain host/SSH details); keep digest bot tracked.
+scripts/sync.sh
+scripts/copy.sh
+scripts/caddy.sh
+scripts/change-owner.sh

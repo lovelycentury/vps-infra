@@ -1,0 +1,6 @@
+include:
+  - compose/00-caddy.yml
+  - compose/10-affine.yml
+  - compose/20-vault.yml
+  - compose/30-wireguard.yml
+  - compose/40-ntfy.yml

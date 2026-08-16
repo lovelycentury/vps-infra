@@ -1,0 +1,46 @@
+vault.okryshto.dev {
+    # @denied not remote_ip 10.8.0.0/24
+    # respond @denied 403
+
+    reverse_proxy vault:8200
+}
+
+affine.okryshto.dev {
+    reverse_proxy affine:3010
+}
+
+vpn.okryshto.dev {
+    reverse_proxy wg-easy:51821
+}
+
+ntfy.okryshto.dev {
+    reverse_proxy ntfy:80
+}
+
+orbit-api.okryshto.dev {
+    reverse_proxy orbit-api:3001
+}
+
+orbit.okryshto.dev {
+    reverse_proxy orbit-web:80
+}
+
+okryshto.dev, www.okryshto.dev {
+    reverse_proxy profile:3000
+}
+
+vizitka.okryshto.dev {
+    reverse_proxy vizitka:80
+}
+
+storybook-react.okryshto.dev {
+    reverse_proxy lokki-docs:80
+}
+
+profile.okryshto.dev {
+    reverse_proxy okryshto-caddy:80
+}
+
+storybook.okryshto.dev {
+    reverse_proxy okryshto-caddy:80
+}
